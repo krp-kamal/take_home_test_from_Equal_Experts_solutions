@@ -1,0 +1,1 @@
+# take_home_test_from_Equal_Experts_solutions
