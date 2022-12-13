@@ -12,7 +12,7 @@ Make your solution simple and clear. We aren't looking for overly complex ways t
 Provide your solution in a zip or compressed tar archive.
 
 ## Exercises
-## Mini Kube
+## ![#1589F0] Mini Kube `#1589F0`
 
 Write a simple hello world application in any one of these languages: Python, Ruby, Go. Build the application within a Docker container and then load balance the application within Minikube. You are not required to automate the installation of Minikube on the host machine.
 
@@ -27,6 +27,8 @@ To have public access to docker image, created public repository in [DockerHub](
 
 ## Docker command to build and push the image.
 ```docker build -t kamalperumal/hello_world:v0.0.1 .```
+
+```docker run   -p 8080:8080 kamalperumal/hello_world:v0.0.2``` 
 
 ```docker push kamalperumal/hello_world:v0.0.1```
 
@@ -57,31 +59,23 @@ The service deployment takes care of both load balance of the pods and expose ap
 
 ```kubectl create -f service.yaml```
 
-### Command to display Services list in minikube
-```minikube service --all```
+### Command to display Services list in minikube```minikube service --all```
 
 Sample output of the services
 
 "exampleservice" URL can be used to expose the sample "Hello world" application
 URL: http://127.0.0.1:50431 
 
-|-----------|----------------|-------------|---------------------------|
 | NAMESPACE |      NAME      | TARGET PORT |            URL            |
 |-----------|----------------|-------------|---------------------------|
 | default   | ee-helloworld  |        8080 | http://192.168.49.2:30002 |
-|-----------|----------------|-------------|---------------------------|
-|-----------|------------|-------------|--------------|
-| NAMESPACE |    NAME    | TARGET PORT |     URL      |
-|-----------|------------|-------------|--------------|
 | default   | kubernetes |             | No node port |
-|-----------|------------|-------------|--------------|
 😿  service default/kubernetes has no node port
 🏃  Starting tunnel for service ee-helloworld.
 🏃  Starting tunnel for service kubernetes.
-|-----------|----------------|-------------|------------------------|
+<br/>
+
 | NAMESPACE |      NAME      | TARGET PORT |          URL           |
 |-----------|----------------|-------------|------------------------|
 | default   | ee-helloworld  |             | http://127.0.0.1:50431 |
 | default   | kubernetes     |             | http://127.0.0.1:50433 |
-|-----------|----------------|-------------|------------------------|
-
