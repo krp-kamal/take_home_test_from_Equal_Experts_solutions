@@ -13,7 +13,7 @@ Provide your solution in a zip or compressed tar archive.
 
 ## Exercises
 
-<b style='color:blue'>Mini Kube</b>
+$${\color{blue}Mini Kube}$$
 ## ![#1589F0] Mini Kube `#1589F0`
 
 Write a simple hello world application in any one of these languages: Python, Ruby, Go. Build the application within a Docker container and then load balance the application within Minikube. You are not required to automate the installation of Minikube on the host machine.
