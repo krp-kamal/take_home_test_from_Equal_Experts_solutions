@@ -16,7 +16,7 @@ Provide your solution in a zip or compressed tar archive.
 
 ## $\colorbox{white}{{\color{blue}{Mini\ Kube}}}$
 
-<h3 style="color:#ff0000">Danger</h3>
+<h3 style="color:#ffffff">Danger</h3>
 
 Write a simple hello world application in any one of these languages: Python, Ruby, Go. Build the application within a Docker container and then load balance the application within Minikube. You are not required to automate the installation of Minikube on the host machine.
 
