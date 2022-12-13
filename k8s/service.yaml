@@ -1,0 +1,19 @@
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: ee-helloworld
+spec:
+  selector:
+    app: ee-helloworld
+  ports:
+  - protocol: "TCP"
+    # Port accessible inside cluster
+    port: 8080
+    # Port to forward to inside the pod
+    targetPort: 8080
+    # Port accessible outside cluster
+    nodePort: 30002
+  type: LoadBalancer
+  externalIPs:
+  - 192.168.64.2
