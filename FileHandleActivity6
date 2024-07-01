@@ -1,0 +1,5 @@
+ # reads every line in the file.#
+robj= open('/Users/kamalperumal/Downloads/r3.log','r')
+print(robj.readline())
+print(robj.readline())
+robj.close()
