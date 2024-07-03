@@ -1,0 +1,3 @@
+User = {'Name': 'Hailey', 'Age': 30, 'City': 'New York'}
+for key, value in User.items():
+    print(f'{key}: {value}')
