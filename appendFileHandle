@@ -1,0 +1,3 @@
+a = open('Writefile', 'a')
+a.write('jack\n')
+a.close()
