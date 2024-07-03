@@ -1,0 +1,2 @@
+with open('Writefile.log', 'a') as file:
+    file.write('jack\n')
