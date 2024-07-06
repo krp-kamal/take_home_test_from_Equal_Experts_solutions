@@ -1,0 +1,4 @@
+FH= open('/Users/kamalperumal/Downloads/FileHandleRead.py')
+for var in FH.readlines():
+    print(var.strip())
+FH.close()
