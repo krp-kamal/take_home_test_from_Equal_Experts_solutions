@@ -1,0 +1,9 @@
+fname = input('Enter a filename: ')
+f = open(fname)
+count = 0
+for line in f:
+    words = line.split()
+    for word in words:# Make sure to loop through 'words'
+        count += 1
+print(count)
+f.close()  # Close the file after reading
