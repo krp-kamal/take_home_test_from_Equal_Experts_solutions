@@ -1,0 +1,13 @@
+filedetails = 'consists of users data'
+filenames = 'Filename.rog'
+filesize = 104
+fileindexnumber = 23
+
+print('File deatils:', filedetails)
+print(type(filedetails))
+print('File names:', filenames)
+print(type(filenames))
+print('File size:', filesize)
+print(type(filesize))
+print('File Index Number:', fileindexnumber)
+print(type(fileindexnumber))
