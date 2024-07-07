@@ -1,0 +1,5 @@
+S1 = 'root:x:bin:bash'
+print(S1[3])
+print(S1[-1])
+print(S1[-4:])
+print(S1[:-4])
